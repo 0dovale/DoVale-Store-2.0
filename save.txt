@@ -1,0 +1,56 @@
+PRODUTOS_______________
+
+  <main class="main-content">
+    <h1>Explorar Produtos</h1>
+    <p>Confira os melhores cheats exclusivos abaixo.</p>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="UrielXiter.png" alt="Uriel Xiter">
+        <span class="tag">Free Fire</span>
+        <h2>Uriel Xiter - ADR</h2>
+        <p class="price">R$29.99</p>
+        <p class="stock">99+ em estoque</p>
+        <button class="add-cart-btn">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="product-card">
+        <img src="UrielXiter.png" alt="Uriel Xiter">
+        <span class="tag">Free Fire</span>
+        <h2>Uriel Xiter - iOS</h2>
+        <p class="price">R$39.99</p>
+        <p class="stock">99+ em estoque</p>
+        <button class="add-cart-btn">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Scarllet-Menu2.jpg" alt="Scarllet Menu">
+        <span class="tag">SA-MP</span>
+        <h2>Scarllet Menu - PC</h2>
+        <p class="price">R$24.99</p>
+        <p class="stock">99+ em estoque</p>
+        <button class="add-cart-btn">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Scarllet-Menu2.jpg" alt="Scarllet Menu">
+        <span class="tag">SA-MP</span>
+        <h2>Scarllet Menu - ADR</h2>
+        <p class="price">R$14.99</p>
+        <p class="stock">99+ em estoque</p>
+        <button class="add-cart-btn">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </main>
+
+  FIREBASE_______________
+
+      const firebaseConfig = {
+    apiKey: "AIzaSyDR7tI-wrUjv4oBTEiGoIr_7Oc8m_1QFQY",
+    authDomain: "dovale-store.firebaseapp.com",
+    databaseURL: "https://dovale-store-default-rtdb.firebaseio.com",
+    projectId: "dovale-store",
+    storageBucket: "dovale-store.firebasestorage.app",
+    messagingSenderId: "1026720673969",
+    appId: "1:1026720673969:web:11568aa5a4ade7dbadf290"
+  };

@@ -1,0 +1,244 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0e0e0e;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1c1c1c;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff00ff;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    background: #222;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #ff00ff;
+    transform: scale(1.05);
+  }
+  
+  .cart-btn {
+    background: #ff00ff;
+    font-weight: bold;
+  }
+  
+  #cart-count {
+    background: black;
+    border-radius: 999px;
+    padding: 2px 8px;
+    margin-left: 6px;
+  }
+  
+  /* MAIN CONTENT */
+  .main-content {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+    padding: 0 40px;
+  }
+  
+  .product-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #ff00ff44;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  
+  .product-card h2 {
+    margin: 10px 0 4px;
+    font-size: 18px;
+  }
+  
+  .price {
+    color: #ff00ff;
+    font-weight: bold;
+  }
+  
+  .stock {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .add-cart-btn {
+    margin-top: 12px;
+    background: #ff00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .add-cart-btn:hover {
+    background: #e600e6;
+    transform: scale(1.03);
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00000033;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .form-container input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background: #2a2a2a;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .form-container input:focus {
+    outline: 2px solid #ff00ff;
+    background: #333;
+  }
+  
+  .login-note {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+  }
+  
+  .login-note a {
+    color: #ff00ff;
+    text-decoration: none;
+  }
+  
+  .login-note a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00000033;
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  
+  .about-section p {
+    margin-bottom: 20px;
+  }
+  
+  /* ANIMAÇÕES DE ENTRADA */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
